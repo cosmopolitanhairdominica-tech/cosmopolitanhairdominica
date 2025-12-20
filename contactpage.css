@@ -202,6 +202,70 @@ body{
     min-height: 250px;
 }
 
+
+
+/* ================= PRICELIST ================= */
+
+.price-list {
+  margin-top: 20px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.checklist input {
+  accent-color: #d9ada2;
+  margin-right: 10px;
+}
+
+.checklist span {
+  margin-left: auto;
+  font-weight: 500;
+  color: hsl(12, 43%, 43%);
+}
+
+.note {
+  font-size: 0.85em;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* ================= FAQ ================= */
+
+.faq-section details {
+  margin-bottom: 10px;
+  background: #f7e3df;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.faq-section summary {
+  font-weight: 500;
+  color: #333;
+  list-style: none;
+}
+
+.faq-section summary::marker {
+  display: none;
+}
+
+.faq-section p {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: black;
+}
+
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 991px){
