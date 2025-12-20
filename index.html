@@ -5,59 +5,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Cosmopolitan Hair</title>
         <link rel="stylesheet" href="preloader.css">
-        <link rel="stylesheet" href="contactpage.css">
+               <link rel="stylesheet" href="contactpage.css">
         <link rel="icon" href="Cosmopolitan Hair/CH_Logo.png" type="image/png">
-    </head>
-    <body>
-        <div class="contactMe">
+     </head>
+   
+     <body>
+   
+      <div class="contactMe">
             <div class="title">
-                <h2>Make it a hair day </h2>
+                <h2>Make it a hair day! </h2>
             </div>
             <div class="box">
                 <!-- Form -->
                 <div class="contact form">
                     <h3>Send a Message</h3>
-                    <form action="https://formspree.io/f/mbdrgngo" method="POST">
+                   <form id="form" action="https://formspree.io/f/xnjadnvd" method="POST">
 
-                        <div class="formBox">
-                            <div class="row50">
-                                <div class="inputBox">
-                                    <span>First Name</span>
-                                    <input type="text" placeholder="Catherine" required>
-                                </div>
-                                <div class="inputBox">
-                                    <span>Last Name</span>
-                                    <input type="text" placeholder="Phillip" required>
-                                </div>
-                            </div>
+  <div class="formBox">
 
-                                <div class="row50">
-                                <div class="inputBox">
-                                    <span>Email Address</span>
-                                    <input type="text" placeholder="catherinap@gmail.com" required>
-                                </div>
-                                <div class="inputBox">
-                                    <span>Mobile</span>
-                                    <input type="text" placeholder="+1 (767) 213-1178" required>
-                                </div>
-                            </div>
+    <div class="row50">
+      <div class="inputBox">
+        <span>First Name</span>
+        <input type="text" id="firstname" name="firstname" placeholder="Catherine" required>
+        <span class="error-message" id="name-error"></span>
+      </div>
 
-                              <div class="row100">
-                                <div class="inputBox">
-                                    <span>Message</span>
-                                    <textarea placeholder="Write your message here..." required></textarea>
-                                </div>
-                              </div>
+      <div class="inputBox">
+        <span>Last Name</span>
+        <input type="text" id="lastname" name="lastname" placeholder="Phillip" required>
+        <span class="error-message" id="subject-error"></span>
+      </div>
+    </div>
 
-                               <div class="row100">
-                                <div class="inputBox">
-                                    <input type="submit" value="Send" required>
-                                </div>
-                              </div>
+    <div class="row50">
+      <div class="inputBox">
+        <span>Email Address</span>
+        <input type="email" id="email" name="email" placeholder="catherinap@gmail.com" required>
+        <span class="error-message" id="email-error"></span>
+      </div>
 
+      <div class="inputBox">
+        <span>Mobile</span>
+        <input type="text" name="mobile" placeholder="+1 (767) 213-1178">
+      </div>
+    </div>
 
-                        </div>
-                    </form>
+    <div class="row100">
+      <div class="inputBox">
+        <span>Message</span>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        <span class="error-message" id="message-error"></span>
+      </div>
+    </div>
+
+    <div class="row100">
+      <div class="inputBox">
+        <input type="submit" value="Send">
+      </div>
+    </div>
+
+  </div>
+
+</form>
                 </div>
 
                 <!-- Info Box -->
@@ -108,7 +117,7 @@
     preloader.classList.add('hide');
   }, 1000);
 </script>
-<scripts src="contactpage.js"></script>
+    <script src="contactpage.js" defer></script>
+
 </body>
 </html>
-
