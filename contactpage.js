@@ -68,3 +68,17 @@ document.getElementById("form").addEventListener("submit", async function (e) {
     alert("Network error. Please try again later.");
   }
 });
+
+ const checkboxes = document.querySelectorAll('input[name="services[]"]');
+  const output = document.getElementById('selectedServices');
+
+  checkboxes.forEach(box => {
+    box.addEventListener('change', () => {
+      const selected = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value)
+        .join(', ');
+
+      output.value = selected || 'No services selected';
+    });
+  });
