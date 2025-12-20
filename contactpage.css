@@ -150,7 +150,7 @@ body{
     min-width: 36px; 
     height: 36px; 
     color: #fff;
-    background-color: #590e4f;
+    background-color: #d9ada2;
     display: flex;
     justify-content: center;
     font-size: 1.3em; 
@@ -241,3 +241,4 @@ body{
         background: transparent;
     }
 }
+
