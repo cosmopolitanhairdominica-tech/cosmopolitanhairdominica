@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Cosmopolitan Hair</title>
-        <link rel="stylesheet" href="contactpage.css">
         <link rel="stylesheet" href="preloader.css">
         <link rel="icon" href="Cosmopolitan Hair/CH_Logo.png" type="image/png">
     </head>
@@ -106,6 +105,67 @@
   setTimeout(() => {
     preloader.classList.add('hide');
   }, 1000);
+
+
+
+  // Contact Page JavaScript
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    // Get inputs (based on your HTML)
+    const firstName = document.querySelector('input[placeholder="Catherine"]');
+    const lastName = document.querySelector('input[placeholder="Phillip"]');
+    const email = document.querySelector('input[placeholder="catherinap@gmail.com"]');
+    const mobile = document.querySelector('input[placeholder="+1 (767) 213-1178"]');
+    const message = document.querySelector("textarea");
+
+    // Simple validation
+    if (firstName.value.trim() === "") isValid = false;
+    if (lastName.value.trim() === "") isValid = false;
+    if (email.value.trim() === "") isValid = false;
+    if (message.value.trim() === "") isValid = false;
+
+    if (!isValid) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    // ✅ Send VALID JSON (fixes your error)
+    const data = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      email: email.value,
+      mobile: mobile.value,
+      message: message.value
+    };
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert("✨ Your message was sent successfully!");
+        form.reset();
+      } else {
+        alert("❌ Oops! There was a problem sending your message.");
+      }
+    } catch (error) {
+      alert("❌ Network error. Please try again later.");
+    }
+  });
+});
+
 </script>
 
 </body>
