@@ -145,6 +145,8 @@ body{
 }
 
 .info .infoBox div span{
+    position: relative; 
+    top: 3px; 
     min-width: 36px; 
     height: 36px; 
     color: #fff;
