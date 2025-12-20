@@ -40,9 +40,9 @@
 
   background: radial-gradient(
     circle at 30% 30%,
-    #cd56ab,
-    #cd56ab,
-    #d331a5
+    #d9ada2,
+    #cc8e7e,
+    #d9ada2
   );
 
   color: #2a2418;
@@ -101,8 +101,8 @@ button#reloadBtn {
 
   background: linear-gradient(
     135deg,
-    #d669d592,
-    #92329192
+    #673224,
+    #ad5741
   );
 
   color: #2a2418;
