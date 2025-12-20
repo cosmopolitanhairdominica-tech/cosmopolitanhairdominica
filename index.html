@@ -1,13 +1,14 @@
-<!--Author: Nathanaelle Cesar-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book With Cosmopolitan Hair</title>
+        <link rel="icon" href="images/icon.png" type="image/png">        
         <link rel="stylesheet" href="preloader.css">
         <link rel="stylesheet" href="contactpage.css">
         <link rel="icon" href="CH_Logo.png" type="image/png">
+
      </head>
    
      <body>
@@ -22,63 +23,108 @@
                     <h3>Send a Message</h3>
                    <form id="form" action="https://formspree.io/f/xnjadnvd" method="POST">
 
-  <div class="formBox">
+<div class="formBox">
 
-    <div class="row50">
-      <div class="inputBox">
-        <span>First Name</span>
-        <input type="text" id="firstname" name="firstname" placeholder="Catherine" required>
-        <span class="error-message" id="name-error"></span>
-      </div>
-
-      <div class="inputBox">
-        <span>Last Name</span>
-        <input type="text" id="lastname" name="lastname" placeholder="Phillip" required>
-        <span class="error-message" id="subject-error"></span>
-      </div>
+  <!-- ===== NAMES ===== -->
+  <div class="row50">
+    <div class="inputBox">
+      <span>First Name</span>
+      <input type="text" id="firstname" name="firstname" placeholder="Catherine" required>
+      <span class="error-message" id="name-error"></span>
     </div>
 
-    <div class="row50">
-      <div class="inputBox">
-        <span>Email Address</span>
-        <input type="email" id="email" name="email" placeholder="catherinap@gmail.com" required>
-        <span class="error-message" id="email-error"></span>
-      </div>
+    <div class="inputBox">
+      <span>Last Name</span>
+      <input type="text" id="lastname" name="lastname" placeholder="Phillip" required>
+      <span class="error-message" id="subject-error"></span>
+    </div>
+  </div>
 
-      <div class="inputBox">
-        <span>Mobile</span>
-        <input type="text" name="mobile" placeholder="+1 (767) 213-1178">
-      </div>
+  <!-- ===== CONTACT ===== -->
+  <div class="row50">
+    <div class="inputBox">
+      <span>Email Address</span>
+      <input type="email" id="email" name="email" placeholder="catherinap@gmail.com" required>
+      <span class="error-message" id="email-error"></span>
     </div>
 
-    <div class="row100">
-      <div class="inputBox">
-        <span>Message</span>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-        <span class="error-message" id="message-error"></span>
-      </div>
+    <div class="inputBox">
+      <span>Mobile</span>
+      <input type="text" name="mobile" placeholder="+1 (767) 213-1178">
+    </div>
+  </div>
+
+  <!-- ===== SERVICES + MESSAGE (SIDE BY SIDE) ===== -->
+  <div class="row50">
+
+    <div class="inputBox">
+      <span>Select Services</span>
+      <ul class="checklist">
+              <span>Braided Hairstyles</span>
+        <li>
+          <label>
+            <input type="checkbox" name="services[]" value="Wash & Blow-Dry - EC$40">
+            Wash & Blow-Dry <strong>EC$40</strong>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" name="services[]" value="Silk Press - EC$80">
+            Silk Press <strong>EC$80</strong>
+          </label>
+        </li>
+      <span>Natural Hairstyles</span>
+        <li>
+          <label>
+            <input type="checkbox" name="services[]" value="Trim / Shape-Up - EC$30">
+            Trim / Shape-Up <strong>EC$30</strong>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" name="services[]" value="Deep Conditioning - EC$45">
+            Deep Conditioning <strong>EC$45</strong>
+          </label>
+        </li>
+      </ul>
     </div>
 
-    <div class="row100">
-      <div class="inputBox">
-        <input type="submit" value="Send">
-      </div>
+    <div class="inputBox">
+      <span>Message</span>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Write your message here..."
+        required
+        style="min-height: 230px;"
+      ></textarea>
+      <span class="error-message" id="message-error"></span>
+
+      
+  <!-- ===== SUBMIT ===== -->
+  <div class="row100">
+    <div class="inputBox">
+      <input type="submit" value="Send">
+    </div>
+  </div>
     </div>
 
   </div>
+</div>
+</div>
 
-</form>
-                </div>
 
-                <!-- Info Box -->
-                <div class="contact info">
-                     <h3>Quick Access</h3>
-                     <div class="infoBox">
-                        <div>
-                            <span><ion-icon name="location"></ion-icon></span>
-                            <p>Goodwill, Roseau <br> DOMINICA</p>
-                        </div>
-                    <div>
+<!-- Info Box -->
+  <div class="contact info">
+       <h3>Quick Access</h3>
+        <div class="infoBox">
+        <div>
+        <span><ion-icon name="location"></ion-icon></span>
+         <p>Goodwill, Roseau <br> DOMINICA</p>
+        </div>
+        <div>
   <span><ion-icon name="mail"></ion-icon></span>
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cosmopolitanhairdominica@gmail.com&su=Hair%20Appointment&body=Hi%20Cosmopolitan%20Hair%2C"
      target="_blank">
@@ -100,13 +146,71 @@
     Follow my work on Instagram 📸
   </a>
 </div>
-                </div>
-                </div>
-               
-                <!-- Contact Box -->
-                <div class="contact map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5912.739739992923!2d-61.388905242659476!3d15.306378690825605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d5bd4bf515d3%3A0x7f3b98e2fb887935!2sGoodwill%2C%20Roseau!5e1!3m2!1sen!2sdm!4v1766200015825!5m2!1sen!2sdm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
-            </div>
+</div>
+</div>
+            
+
+<!-- ================= FAQ ================= -->
+<div class="contact faq-section">
+  <h3>FAQs 💬</h3>
+
+  <details>
+    <summary>What services do you offer?</summary>    
+    <p>I specialize in braiding and natural hairstyles for men and women.</p>
+  </details>
+
+  <details>
+    <summary>Where are you located?</summary>
+    <p>I’m based in Goodwill. Exact location details are shared after booking confirmation.</p>
+  </details>
+
+  <details>
+    <summary>Is Cosmopolitan Hair home-based, mobile, or in a salon?</summary>
+    <p>Cosmopolitan Hair operates home-based / salon-style.</p>
+  </details>
+
+   <details>
+    <summary> What are your business hours?</summary>
+    <p>I’m open 8:00 AM - 7:00 PM.</p>
+  </details>
+
+  <details>
+    <summary>Ia a deposit required?</summary>
+    <p>Yes. A $15 deposit is required to secure your appointment.</p>
+  </details>
+
+   <details>
+    <summary>Is there a late policy?</summary>
+    <p>Yes. A $20 late fee applies if you arrive late to your appointment.</p>
+  </details>
+
+  <details>
+    <summary>What payment methods are accepted?</summary>
+    <p>Cash and online transfers are accepted.</p>
+  </details>
+
+  <details>
+    <summary> Do you offer wash services?</summary>
+    <p>Yes! Wash services are available.</p>
+  </details>
+
+  <details>
+    <summary>Do I need to bring braiding hair?</summary>
+    <p>Yes. Braiding hair is required at least 1-2 days in advance to ensure a smooth appointment.</p>
+  </details>
+
+  <details>
+    <summary>Do you work with all hair types?</summary>
+    <p>Yes! All textures are welcome 💖</p>
+  </details>
+
+
+</div>
+
+          <!-- Contact Box -->
+          <div class="contact map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5912.739739992923!2d-61.388905242659476!3d15.306378690825605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d5bd4bf515d3%3A0x7f3b98e2fb887935!2sGoodwill%2C%20Roseau!5e1!3m2!1sen!2sdm!4v1766200015825!5m2!1sen!2sdm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+          </div>
        
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -114,9 +218,11 @@
         <div id="preloader">
         <div class="logo">
         <div class="initials is-bouncing">💇‍♀️</div>
-       <div class="fullname">Cosmopolitan <br>Hair</div>
+       <div class="fullname">Cosmopolitan <br>Hair</div>   
   </div>
 </div>
+
+
 
    <script>
       // Contact Page Preloader
@@ -130,8 +236,3 @@
 
 </body>
 </html>
-
-
-
-
-
