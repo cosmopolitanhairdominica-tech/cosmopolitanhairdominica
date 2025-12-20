@@ -68,5 +68,3 @@ document.getElementById("form").addEventListener("submit", async function (e) {
     alert("Network error. Please try again later.");
   }
 });
-
-
