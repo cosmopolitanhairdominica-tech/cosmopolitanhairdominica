@@ -12,7 +12,28 @@
      </head>
    
      <body>
-   
+   <!-- PRELOADER -->
+<div id="preloader">
+  <div class="logo">
+    
+    <!-- LOGO CIRCLE -->
+    <div class="initials is-bouncing">
+      <img src="images/logo.png" alt="Your Brand Logo" class="logo">
+    </div>
+
+ <script>
+      // Contact Page Preloader
+  const preloader = document.getElementById('preloader');
+
+  setTimeout(() => {
+    preloader.classList.add('hide');
+  }, 1000);
+</script>
+    <script src="contactpage.js" defer></script>
+
+  </div>
+</div>
+         
       <div class="contactMe">
             <div class="title">
                 <h2>Make it a hair day! </h2>
@@ -215,29 +236,9 @@
        
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- PRELOADER -->
-        <div id="preloader">
-        <div class="logo">
-        <div class="initials is-bouncing">
-              <img src="CH_Logo.png" alt=" Brand Logo" class="logo">
-        </div>
-       <div class="fullname">Cosmopolitan <br>Hair</div>   
-  </div>
-</div>
-
-
-
-   <script>
-      // Contact Page Preloader
-  const preloader = document.getElementById('preloader');
-
-  setTimeout(() => {
-    preloader.classList.add('hide');
-  }, 1000);
-</script>
-    <script src="contactpage.js" defer></script>
-
+      
 </body>
 </html>
+
 
 
