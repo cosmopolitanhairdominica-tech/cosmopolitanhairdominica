@@ -33,6 +33,7 @@
   width: 110px;
   height: 110px;
   font-size: 25px;
+  color: #d9ada2,
   font-weight: 800;
   display: grid;
   place-items: center;
@@ -110,4 +111,5 @@ button#reloadBtn {
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
+
 
