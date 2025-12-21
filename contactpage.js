@@ -10,13 +10,9 @@ document.getElementById("form").addEventListener("submit", async function (e) {
   const mobile = document.querySelector("input[name='mobile']");
   const message = document.getElementById("message");
 
-  // ===== SERVICES =====
-  const checkboxes = document.querySelectorAll('input[name="services[]"]');
-  const selectedServices = Array.from(checkboxes)
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
+  // Clear errors
+  document.querySelectorAll(".error-message").forEach(el => el.textContent = "");
 
-  // ===== VALIDATION =====
   if (firstname.value.trim() === "") {
     alert("Please enter your first name");
     isValid = false;
@@ -44,16 +40,12 @@ document.getElementById("form").addEventListener("submit", async function (e) {
 
   if (!isValid) return;
 
-  // ===== DATA SENT TO FORMSPREE =====
   const data = {
-    "First Name": firstname.value.trim(),
-    "Last Name": lastname.value.trim(),
-    "Email": email.value.trim(),
-    "Mobile": mobile.value.trim(),
-    "Selected Services": selectedServices.length
-      ? selectedServices.join(", ")
-      : "No services selected",
-    "Message": message.value.trim()
+    firstname: firstname.value.trim(),
+    lastname: lastname.value.trim(),
+    email: email.value.trim(),
+    mobile: mobile.value.trim(),
+    message: message.value.trim()
   };
 
   try {
@@ -76,3 +68,19 @@ document.getElementById("form").addEventListener("submit", async function (e) {
     alert("Network error. Please try again later.");
   }
 });
+
+ const checkboxes = document.querySelectorAll('input[name="services[]"]');
+  const output = document.getElementById('selectedServices');
+
+  checkboxes.forEach(box => {
+    box.addEventListener('change', () => {
+      const selected = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value)
+        .join(', ');
+
+      output.value = selected || 'No services selected';
+    });
+
+    
+    
