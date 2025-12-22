@@ -131,7 +131,7 @@ body{
 /* ================= INFO ================= */
 
 .info{
-    background: #ebab27;
+    background: #f8dd79;
 }
 
 .info h3{
@@ -150,7 +150,7 @@ body{
     min-width: 36px; 
     height: 36px; 
     color: #fff;
-    background-color: #ebab27;
+    background-color: #f8dd79;
     display: flex;
     justify-content: center;
     font-size: 1.3em; 
@@ -230,7 +230,7 @@ body{
 .checklist span {
   margin-left: auto;
   font-weight: 500;
-  color: hsl(12, 43%, 43%);
+  color: #ffd172;
 }
 
 .note {
@@ -243,7 +243,7 @@ body{
 
 .faq-section details {
   margin-bottom: 10px;
-  background: #ebab27;
+  background: #f8dd79;
   padding: 10px 14px;
   border-radius: 8px;
   cursor: pointer;
@@ -305,5 +305,6 @@ body{
         background: transparent;
     }
 }
+
 
 
