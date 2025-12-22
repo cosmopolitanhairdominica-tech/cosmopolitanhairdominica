@@ -135,7 +135,7 @@ body{
 }
 
 .info h3{
-    color: #fff;
+    color: black;
 }
 
 .info .infoBox div{
@@ -149,7 +149,7 @@ body{
     top: 3px; 
     min-width: 36px; 
     height: 36px; 
-    color: #fff;
+    color: black;
     background-color: #f8dd79;
     display: flex;
     justify-content: center;
@@ -305,6 +305,7 @@ body{
         background: transparent;
     }
 }
+
 
 
 
