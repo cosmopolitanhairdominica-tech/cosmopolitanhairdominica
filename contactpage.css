@@ -111,7 +111,7 @@ body{
 
 .inputBox input[type=submit]{
     background: #f8dd79;
-    color: #fff;
+    color: black;
     border: none;
     font-size: 1em; 
     max-width: 110px; 
@@ -305,6 +305,7 @@ body{
         background: transparent;
     }
 }
+
 
 
 
