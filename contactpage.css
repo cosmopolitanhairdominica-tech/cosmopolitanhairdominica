@@ -59,7 +59,7 @@ body{
 }
 
 .contact h3{
-    color: #f8dd79;
+    color: rgb(235, 171, 39);
     font-weight: 500;
     font-size: 1.3em; 
     margin-bottom: 8px; 
@@ -305,6 +305,7 @@ body{
         background: transparent;
     }
 }
+
 
 
 
