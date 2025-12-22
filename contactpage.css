@@ -110,7 +110,7 @@ body{
 }
 
 .inputBox input[type=submit]{
-    background: #d08572;
+    background: #f8dd79;
     color: #fff;
     border: none;
     font-size: 1em; 
@@ -305,6 +305,7 @@ body{
         background: transparent;
     }
 }
+
 
 
 
