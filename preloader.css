@@ -41,9 +41,9 @@
 
   background: radial-gradient(
     circle at 30% 30%,
-    #f8dd79,
-    #f8dd79,
-    #f8dd79
+  #fff1b3,
+  #f8dd79,
+  #e6c85f
   );
 
   color: #2a2418;
@@ -111,6 +111,7 @@ button#reloadBtn {
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
+
 
 
 
