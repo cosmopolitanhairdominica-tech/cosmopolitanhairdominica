@@ -159,7 +159,7 @@ body{
 }
 
 .info .infoBox div p{
-    color: #fff;
+    color: black;
     font-size: 1em; 
 }
 
@@ -305,6 +305,7 @@ body{
         background: transparent;
     }
 }
+
 
 
 
