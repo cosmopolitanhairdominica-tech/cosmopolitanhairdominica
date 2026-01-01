@@ -307,6 +307,119 @@ body{
 }
 
 
+/* ================= DARK MODE ================= */
+
+body{
+    background-color: #0f0f0f;
+    color: #eaeaea;
+}
+
+/* Section background */
+.contactMe{
+    background-color: #0f0f0f;
+}
+
+/* Cards */
+.contact{
+    background: #1a1a1a;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.6);
+}
+
+/* Titles */
+.contactMe .title h2{
+    color: #eaeaea;
+}
+
+/* Headings */
+.contact h3{
+    color: #f8dd79;
+}
+
+/* Form labels */
+.inputBox span{
+    color: #f8dd79;
+}
+
+/* Inputs */
+.inputBox input,
+.inputBox textarea{
+    background-color: #121212;
+    color: #eaeaea;
+    border: 1px solid #444;
+}
+
+.inputBox input::placeholder,
+.inputBox textarea::placeholder{
+    color: #888;
+}
+
+/* Submit button */
+.inputBox input[type=submit]{
+    background: #f8dd79;
+    color: #000;
+}
+
+/* Info panel */
+.info{
+    background: #1f1f1f;
+}
+
+.info h3,
+.info .infoBox div p,
+.info .infoBox div a{
+    color: #eaeaea;
+}
+
+.info .infoBox div span{
+    background-color: #f8dd79;
+    color: #000;
+}
+
+/* Social icons */
+.sci li a{
+    color: #888;
+}
+
+.sci li a:hover{
+    color: #f8dd79;
+}
+
+/* Map container */
+.map{
+    background: #1a1a1a;
+}
+
+/* Price list */
+.price-list{
+    color: #eaeaea;
+}
+
+.checklist li{
+    color: #eaeaea;
+}
+
+.checklist span{
+    color: #f8dd79;
+}
+
+/* FAQ */
+.faq-section details{
+    background: #1f1f1f;
+}
+
+.faq-section summary{
+    color: #eaeaea;
+}
+
+.faq-section p{
+    color: #ccc;
+}
+
+/* Notes */
+.note{
+    color: #aaa;
+}
+
 
 
 
